@@ -4,8 +4,8 @@
 // external dependencies, so it's guaranteed to run even before the backend
 // is live. Flip DEVICE_SOURCE once you've deployed and tested the API.
 
-export const DEVICE_SOURCE = 'bundled'; // 'bundled' | 'api'
-export const API_BASE_URL = 'https://your-backend-domain.example.com'; // set after deploying (see DEPLOY.md)
+export const DEVICE_SOURCE = 'api'; // 'bundled' | 'api'
+export const API_BASE_URL = 'https://xenvia-backend-production.up.railway.app';
 
 export async function fetchDevicesFromApi(params = {}) {
   const qs = new URLSearchParams(params).toString();
